@@ -36,3 +36,13 @@
 ![](https://soyuan-yuque.oss-cn-shanghai.aliyuncs.com/picgo/20201119094310.png)
 
 ---
+
+# 阅读顺序
+- eureka-server
+- eureka-client
+- eureka-consumer
+- eureka-ribbon
+- eureka-feign
+- config-server
+- config-client
+- api-gateway
