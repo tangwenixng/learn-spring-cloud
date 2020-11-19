@@ -1,6 +1,5 @@
-package com.twx.learn.sc.eurekaclient.eurekaserver;
+package com.twx.learn.sc.eurekaserver;
 
-import org.springframework.boot.SpringApplication;
 import org.springframework.boot.WebApplicationType;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.boot.builder.SpringApplicationBuilder;

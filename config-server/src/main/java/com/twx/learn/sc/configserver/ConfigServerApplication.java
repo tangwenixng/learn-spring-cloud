@@ -1,20 +1,22 @@
-package com.twx.learn.sc.gateway;
+package com.twx.learn.sc.configserver;
 
 import org.springframework.boot.WebApplicationType;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.boot.builder.SpringApplicationBuilder;
+import org.springframework.cloud.config.server.EnableConfigServer;
 import org.springframework.cloud.netflix.eureka.EnableEurekaClient;
 
 /**
  *
  */
 @EnableEurekaClient
+@EnableConfigServer
 @SpringBootApplication
-public class ConfigClientApplication {
+public class ConfigServerApplication {
 
     public static void main(String[] args) {
 //        SpringApplication.run(EurekaConsumerApplication.class, args);
-        new SpringApplicationBuilder(ConfigClientApplication.class).web(WebApplicationType.SERVLET).run(args);
+        new SpringApplicationBuilder(ConfigServerApplication.class).web(WebApplicationType.SERVLET).run(args);
     }
 
 }

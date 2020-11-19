@@ -1,4 +1,4 @@
-package com.twx.learn.sc.gateway.controller;
+package com.twx.learn.sc.consumer.controller;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.cloud.client.ServiceInstance;

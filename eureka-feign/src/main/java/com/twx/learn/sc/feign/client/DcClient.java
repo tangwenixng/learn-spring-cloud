@@ -1,4 +1,4 @@
-package com.twx.learn.sc.gateway.client;
+package com.twx.learn.sc.feign.client;
 
 import org.springframework.cloud.openfeign.FeignClient;
 import org.springframework.web.bind.annotation.GetMapping;

@@ -7,3 +7,5 @@
     <artifactId>spring-cloud-starter-openfeign</artifactId>
 </dependency>
 ```
+
+使用注解`@EnableFeignClients` :Scans for interfaces that declare they are feign clients (via FeignClient @FeignClient).

@@ -1,14 +1,23 @@
-# Getting Started
+# 搭建注册中心
 
-### Reference Documentation
-For further reference, please consider the following sections:
+引入依赖：
+```xml
+<dependency>
+    <groupId>org.springframework.cloud</groupId>
+    <artifactId>spring-cloud-starter-netflix-eureka-server</artifactId>
+</dependency>
+```
 
-* [Official Apache Maven documentation](https://maven.apache.org/guides/index.html)
-* [Spring Boot Maven Plugin Reference Guide](https://docs.spring.io/spring-boot/docs/2.4.0/maven-plugin/reference/html/)
-* [Create an OCI image](https://docs.spring.io/spring-boot/docs/2.4.0/maven-plugin/reference/html/#build-image)
-
-### Guides
-The following guides illustrate how to use some features concretely:
-
-* [Service Registration and Discovery](https://spring.io/guides/gs/service-registration-and-discovery/)
-
+配置：
+```yaml
+eureka:
+  instance:
+    #The hostname if it can be determined at configuration time (otherwise it will be guessed from OS primitives).
+    hostname: localhost
+  client:
+    #Indicates whether or not this instance should register its information with eureka server for discovery by others.
+    register-with-eureka: false
+    #indicates whether this client should fetch eureka registry information from eureka server
+    fetch-registry: false
+```
+注意一下，`register-with-eureka` 和 `fetch-registry` 属性就好了

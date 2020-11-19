@@ -1,4 +1,4 @@
-package com.twx.learn.sc.gateway;
+package com.twx.learn.sc.feign;
 
 import org.springframework.boot.WebApplicationType;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
